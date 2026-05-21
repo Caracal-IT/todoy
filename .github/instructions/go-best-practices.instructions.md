@@ -40,6 +40,10 @@ applyTo: "**/*.go,go.mod,go.sum"
 ## Dependency and API design
 
 - Keep module dependencies minimal and actively used.
+- Check the license of every new dependency, library, snippet source, and bundled asset before using it.
+- MIT and similar permissive licenses can be used when they are compatible with the project.
+- Prefer permissive licenses such as MIT, BSD, ISC, and Apache-2.0 unless told otherwise.
+- Do not add dependencies with unclear, missing, or incompatible licenses.
 - Prefer small interfaces that model the exact behavior required by the caller.
 - Avoid creating interfaces only for testing; use concrete types unless an abstraction has production value.
 - Design constructors that validate required dependencies up front.

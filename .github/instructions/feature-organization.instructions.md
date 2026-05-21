@@ -24,7 +24,6 @@ applyTo: "**/*"
   - `Summary`
   - `User Expectations`
   - `Acceptance Criteria`
-  - `License Check`
 - Keep these notes concise, specific, and directly tied to the feature being built.
 - Write acceptance criteria in clear, testable statements.
 
@@ -34,14 +33,6 @@ applyTo: "**/*"
 - `Summary`: explain what the feature does and why it exists.
 - `User Expectations`: describe what the user should be able to do or experience.
 - `Acceptance Criteria`: define the observable conditions that must be true for the feature to be considered complete.
-- `License Check`: record the licenses of new dependencies or assets and confirm they are acceptable for the project.
-
-## License expectations
-
-- Check the license of every new dependency, library, snippet source, and bundled asset before using it.
-- MIT and similar permissive licenses can be used when they are compatible with the project.
-- Prefer permissive licenses such as MIT, BSD, ISC, and Apache-2.0 unless told otherwise.
-- Do not add dependencies with unclear, missing, or incompatible licenses.
 
 ## Delivery expectations
 
