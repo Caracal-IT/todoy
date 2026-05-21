@@ -26,6 +26,7 @@ applyTo: "**/*.go,go.mod,go.sum"
 - Keep functions small enough to read quickly; extract helpers when a function starts doing multiple jobs.
 - Prefer small files, small functions, and small types over large multipurpose units.
 - Write table-driven tests for logic-heavy behavior where it improves clarity and coverage.
+- Add GoDoc comments for exported packages, types, functions, methods, and other exported identifiers.
 
 ## Project structure
 
@@ -56,6 +57,13 @@ applyTo: "**/*.go,go.mod,go.sum"
 - Produce structured, actionable log messages.
 - Do not log secrets, tokens, or sensitive user data.
 - Return errors to the caller when they need to decide how to handle failure; log at the application boundary.
+
+## Testing and performance
+
+- Comprehensive tests MUST be created for new and changed behavior, and those tests MUST pass.
+- Cover success cases, failure cases, edge cases, and regression-prone paths.
+- Add benchmarks for performance-critical code paths or when a change may affect runtime or allocation behavior.
+- Use benchmark results to compare approaches and avoid speculative performance claims.
 
 ## Maintenance expectations
 
